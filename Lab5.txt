@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Exercise 1 - (Min Li)</title>
+      <meta charset ="utf-8">
+      <script>
+
+       <!--ex1-->
+        function ex1() {
+          var answer = prompt("What is your first name?");
+          alert("Welcome to JavaScript, " + answer);
+          document.write("<h3>" + answer + " is CST8285 student. </h3>");
+        }
+
+        <!--ex2-->
+        function ex2(){
+          var answer = prompt("Please enter a number");
+          alert(parseInt(answer));
+        }
+
+        <!--ex3-->
+        function ex3(){
+          var answer = prompt("Please enter a number");
+          alert(parseFloat(answer));
+        }
+
+        <!--ex4-->
+        function ex4(){
+          var answer = prompt("Please enter a number");
+          if (isNaN(parseFloat(answer))){
+          alert("You did not enter a number");
+          }
+          else{alert(answer + " is a number");
+          }
+        }
+
+        <!--ex5-->
+        function ex5(){
+          var answer = prompt("Please enter a number");
+          if (isNaN(parseFloat(answer))){
+          do {answer = prompt("You did not enter a number. Please enter a number");}
+          while(isNaN(parseFloat(answer)))}
+          alert(answer + " is a number");
+        }
+
+        <!--ex6-->
+        function ex6(){
+          var answer1 = prompt("Please enter a first number");
+          if (isNaN(parseFloat(answer1))){
+          do {answer1 = prompt("You did not enter a number. Please enter a first number.");}
+          while(isNaN(parseFloat(answer1)));}
+
+          var answer2 = prompt("Please enter a second number");
+          if(isNaN(parseFloat(answer2))){
+          do answer2 = prompt("You did not enter a number. Please enter a second number.");
+          while(isNaN(parseFloat(answer2)));}
+
+          if(answer1==answer2){
+          alert("The numbers are equal.");}
+          if(answer1>answer2){
+          alert(answer1 + " is greater than " + answer2);}
+          else{alert(answer1 + " is less than or equal to " + answer2);}
+        }
+
+        <!--ex7-->
+        function ex7(){
+          for (var n=0; n<10; n++){
+          if(n<9){document.write(n + ",");}
+          else{document.write(n);}}
+        }
+      </script>
+    </head>
+  <body>
+       <h1>Exercise - First Encounter with JavaScript</h1>
+
+       <div> USE this button for ex1
+         <input type="button" value="Ex1" onclick="ex1()">
+       </div>
+       <div> USE this button for ex2
+         <input type="button" value="Ex2" onclick="ex2()">
+       </div>
+       <div> USE this button for ex3
+         <input type="button" value="Ex3" onclick="ex3()">
+       </div>
+       <div> USE this button for ex4
+         <input type="button" value="Ex4" onclick="ex4()">
+       </div>
+       <div> USE this button for ex5
+         <input type="button" value="Ex5" onclick="ex5()">
+       </div>
+       <div> USE this button for ex6
+         <input type="button" value="Ex6" onclick="ex6()">
+       </div>
+       <div> USE this button for ex7
+         <input type="button" value="Ex7" onclick="ex7()">
+       </div>
+
+  </body>
+</html>

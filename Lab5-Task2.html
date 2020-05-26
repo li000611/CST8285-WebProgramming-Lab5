@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <title>Lab5 By Min Li</title>
+	<meta charset="utf-8">
+
+	<script>
+
+
+	 function demoConv(){
+	 var inputVar = prompt("Please enter temperature as Celsius:");
+	 if (isNaN(parseFloat(inputVar))){
+	 do {var inputVar = prompt("Please enter a valid temperature: it should be a number!");}
+	 while(isNaN(parseFloat(inputVar)))}
+
+	 var outputVar = inputVar*1.8+32;
+	 alert("Celsius temperature: "+ inputVar + "   Fahrenheit temperature: " + outputVar);}
+
+
+		/*
+		Create a function that converts the the inputted temperture from Celsius to Fahrenheit: convertToFahrenheit.
+		The function should first display a prompt asking the user to enter a temperature as Celsius.
+		The value entered should be validated to ensure it is a number.
+		Then, the appropriate formula should be applied to the value to convert the
+		temperature. Finally, an alert should be displayed indicating the
+		temperature that they entered, and the converted temperature.
+		The function should be called when the appropriate button below is pressed.
+		*/
+
+	</script>
+</head>
+
+<body>
+<h3>Lab 5 - Introduction to JavaScript</h3>
+    <table>
+        <tr>
+            <th>Temperature conversion</th>
+        </tr>
+        <tr>
+			<td><input type="button" onclick=demoConv() name="btnConvert" id="btnConvert" value="Convert!"></td>
+		</tr>
+    </table>
+	<p>
+      <a href="https://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-html401.png"
+          alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+    </p>
+</body>
+</html>
